@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/(ac.json|map.txt)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=2592000" }] },
+    { "source": "/(.*)", "headers": [{ "key": "Permissions-Policy", "value": "geolocation=(self), microphone=(self)" }] }
+  ]
+}
